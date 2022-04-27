@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.background {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(./img/backgroung.jpg);
+    opacity: 0.5;
+    filter: blur(2px);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.logo {
+    background-size: cover;
+    background-image: url(./img/logo.png);
+    background-position: center;
+    background-color: #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 300px;
+    margin: auto;
+    margin-bottom: 15px;
+
+}
+
+.template {
+    margin: 20px auto 20px auto;
+    justify-content: center;
+}
+
+label {
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+.header {
+    text-align: center;
+    color: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    height: 100%;
+    padding: 60px;
+    padding-bottom: 130px;
+    border-radius: 10px;
+    background-color: rgb(113, 28, 166);
+    background-image: linear-gradient(rgb(123, 0, 255), rgba(174, 0, 255, 0.891));
+    position: relative;
+}
+
+form h1 {
+    font-weight: lighter;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    left: 0px;
+    top: 46px;
+    width: 23px;
+    opacity: 0.4;
+
+}
+
+
+.checkbox-wrapper {
+    flex-direction: row;
+    margin-top: 15px;
+    align-items: center;
+    padding-left: 5px;
+}
+
+.checkbox-wrapper label {
+    padding: 0;
+    margin: 0;
+    margin-left: 10px;
+    color: rgba(245, 245, 245, 0.94);
+}
+
+
+.form-control {
+    width: 100%;
+    height: 35px;
+    padding: 15px;
+    padding-left: 25px;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid silver;
+    outline: none;
+
+
+}
+
+.form-control:focus {
+    outline: none;
+}
+
+.form-control::placeholder {
+    color: rgba(245, 245, 245, 0.94);
+    font-size: medium;
+
+}
+
+.submit-button {
+
+    width: 100px;
+    padding: 12px;
+    background: white;
+    border-radius: 40px;
+    text-align: center;
+    border: 1px solid rgb(123, 0, 255);
+    box-shadow: 0 1px 2px rgb(123, 0, 255);
+
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+
+}
+
+.submit-button:hover {
+
+    cursor: pointer;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 70px;
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+    color: rgba(245, 245, 245, 0.94);
+}
+
+.footer:hover {
+    cursor: pointer;
+
+}
